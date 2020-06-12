@@ -11,7 +11,7 @@ def process_output(keys_file, inputs):
     with open('output.csv', 'w', newline='') as output_csv:
         csv_writer = csv.writer(output_csv)
         for key, value in outputs.items():
-            csv_writer.writerow([key] + value)
+            csv_writer.writerow(value)
 
 def parse_input(input_file):
     inputs = {}
